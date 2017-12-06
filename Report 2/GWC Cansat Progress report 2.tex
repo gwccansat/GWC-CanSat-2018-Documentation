@@ -13,9 +13,10 @@
 \usepackage{geometry} % set page block parameters suitably
 \usepackage{etoolbox}
 \usepackage{wrapfig}
+\usepackage{float}
 
 
-%If we don't want page breaks for chapters
+%In case we don't want page breaks for chapters
 %\makeatletter
 %\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 %\makeatother
@@ -259,9 +260,21 @@
 			difficult to interface with. This has since been changed to the ArduCam
 			OV5640, which utilises the same optical sensor, but is able to interface
 			via I$^2$C (so is easily interfacable), has lower power consumption, and
-			is more compact.
+			is more compact.\\\\
 		\end{itemize}
 		}
+		
+		%Need to get a better photo - this one is low res, off-centre, 
+		%pulled from google doc, etc.
+
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=\textwidth]{CadRenders}
+			\end{center}
+			\vspace{-15pt}
+			\caption{Proposed wireframe design of base station live processing graphs
+			and parameter display}
+		\end{figure}
 
 
 \chapter{Cansat Description}
@@ -285,6 +298,16 @@
 		effort.}
 
 	\section{Mechanical Design}
+
+		\begin{wrapfigure}{r}{0.34\textwidth}
+			\vspace{-47pt}
+	 		\begin{center}
+			\includegraphics[width=0.30\textwidth]{placeholder}
+			\end{center}
+			\vspace{-15pt}
+			\caption[X]{Prototype frame for experimental module compartment}
+		\end{wrapfigure}
+
 		The cansat is designed with a modular secondary mission compartment. 
 		This will allow the cansat to be used with different experimental apparatus 
 		in the future. A rail system will allow experimental apparatus to be set up,
@@ -302,6 +325,14 @@
 		bottom of the cansat for further protection of the cansat from shock. The 
 		$\frac{1}{2}\lambda$ dipole communications antenna is mounted outside
 		the outer shell along the long axis in order to optimise communications.
+
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{CadRenders}
+			\end{center}
+			\vspace{-15pt}
+			\caption{Computer--aided design renders}
+		\end{figure}
 
 	\section{Electronics Design}
 		Two independent cells are symmetrically distributed in the cansat and
@@ -322,8 +353,27 @@
 		between the CHIP Pro and select sensors, in addition to possibly providing
 		regulated power to some parts of the system. The arduino will not be 
 		executing any complex calculations or data aggregation.}
+		
+		\begin{figure}[H]
+			\begin{center}
+				\includegraphics[width=0.6\textwidth]{placeholder}
+			\end{center}
+			\vspace{-15pt}
+			\caption{Electronics sub-systems diagram}
+		\end{figure}
+
 
 	\section{Software Design}
+
+		\begin{wrapfigure}{r}{0.33\textwidth}
+			\vspace{-30pt}
+	 		\begin{center}
+			\includegraphics[width=0.30\textwidth]{placeholder}
+			\end{center}
+			\vspace{-15pt}
+			\caption[X]{Software system architecture diagram}
+		\end{wrapfigure}
+
 		The CHIP reads all incoming sensor data and applies lightweight processing
 		to the values. All raw data is stored in built-in NAND storage on the CHIP
 		or select raw data (larger sets such as camera footage) is stored in an
@@ -351,11 +401,26 @@
 		}
 
 	\section{Landing and Recovery System}
+
+		\begin{wrapfigure}{r}{0.33\textwidth}
+			\vspace{-30pt}
+	 		\begin{center}
+			\includegraphics[width=0.30\textwidth]{placeholder}
+			\end{center}
+			\vspace{-15pt}
+			\caption[X]{Landing and recovery system diagram}
+		\end{wrapfigure}
+
 		We plan to use a basic drag parachute design to regulate the cansat’s 
 		descent speed. On landing, the fiberglass outer shell will flex, absorbing 
 		some of the landing shock. Our cansat will have both a dedicated
 		communications antenna and gps antenna. This means we will have 
 		better connection to the base station and a high chance of accurate GPS lock.
+		\\\\
+		{\color{blue}As an additional measure, foam padding will be added 
+		directly underneath the batteries to protect them from extensive damage, which
+		could otherwise risk the battery life of the cansat during the recovery phase of
+		the launch.}
 
 	\section{Ground Support Equipment}
 		The team is developing a lightweight, robust base station program, which 
