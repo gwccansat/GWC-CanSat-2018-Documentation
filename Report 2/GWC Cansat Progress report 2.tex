@@ -52,21 +52,12 @@
 			provided us with extra funding surrounding our project,
 			the third company providing us with free custom PCB 
 			manufacturing.
-			\item Following our success with using Slack messenger for 
-			internal communication and meeting scheduling,
-			we are continuing with using this, further improving this
-			by integrating our team's GitHub repositories with the relevant
-			channels.
-			\item Having sections of our team that have responsibilites for
-			different	areas of the cansat development was leading to issues
+			\item Having different sub-teams that have responsibilites for
+			different	parts of the cansat development was leading to issues
 			with team members not knowing how the overall	project was 
 			progressing. The team leaders now collaborate to produce an
 			internal report of progress every 2-3 weeks. This has recieved
 			positive feedback within the team.
-			\item We are continuing to utilise the sponsored licesnces we 
-			recieved from TeamGantt to produce weekly gantt charts
-			to ensure that we stay on schedule within each sub-team, in
-			addition to an overall layout of our progress.
 			\item We are continuing to maintain our website, hosted on the
 			domain \url{gwccansat.com}, in addition to having officially launched our
 			video blog (`vlog') programme, showing our progress on a weekly
@@ -94,8 +85,6 @@
 			assembly, as an alternative to PCB fabrication. This was recently
 			resolved with the addition of our new sponsors, providing us
 			with free PCB fabrication and more funding.
-			\item We now have a definitive bill of materials (BOM) for 
-			electronic components and materials that we will need.
 			\item We also now have an initial schematic design, that is 
 			ready to be made into a PCB design, provided that the software
 			team have successfully interfaced and tested all the sensors and
@@ -111,10 +100,7 @@
 			\item We are currently working on testing each individual sensor, 
 			to ensure that we are able to interface with them correctly with
 			the current wiring solution and ready to make notes of any required 
-			ammendments.
-			\item Additionally, we are able to use elements of last year's code
-			to assist us when creating the final cansat program and base
-			station program.
+			amendments.
 		\end{itemize}
 
 		\item[Secondary mission] \hfill \begin{itemize}
@@ -122,15 +108,21 @@
 			stabilised levitation exeriment to harvest vibration energy. We have
 			unfortunately run into several technical problems, so are currently
 			still working on having a functional experiment that produces power.
-			\item As a precaution for the secondary mission not working, we 
-			have begun brainstorming several other experiments to put in the
-			secondary mission module. This is made easier by our modular
-			experimental compartment in our cansat design.
 			\item We have developed a plan to have multiple experiments ready
 			by the time of the competition, so that we have a backup options
 			in case of failure to prepare the main experiment. It will also allow
 			us to demonstrate the concept of switching the experimental module 
 			quickly.
+			\item As a precaution for the secondary mission not working, we 
+			have begun brainstorming several other experiments to put in the
+			secondary mission module. This is made easier by our modular
+			experimental compartment in our cansat design.
+			\item Currently, the alternative secondary missions that we are researching
+			further are placing two Geiger-Muller tubes in the cansat to compare
+			changes in cosmic radiation levels between flight, on the ground and
+			other potential places. Another mission being researched is to determine
+			the health of trees, plantations and forests from the levels of various 
+			frequencies of electromagnetic radiation being emitted from them.
 		\end{itemize}
 
 	\end{description}
@@ -145,8 +137,8 @@
 			Mechanical, Software.
 			\item{Morven Pennie} --- \textbf{Team Leader}, Electrical,
 			Mechanical, Outreach.
-			\item{Erin Edmonstone} --- Mechanical, Outreach, 
-			{\color{blue}Secondary Mission Coordinator.}
+			\item{Erin Edmonstone} --- Mechanical, 
+			{\color{blue}Secondary Mission Coordinator, \sout{Outreach.}}
 			\item{Harold Thain} --- Mechanical and Outreach.
 			\item{Josh Flint} --- Electrical, Mechanical, Outreach.
 			\color{blue}
@@ -173,8 +165,9 @@
 		risk assessment.
 
 		\subsubsection{Primary Mission}
-		The primary mission commits the parameters for telemetry air pressure and
-		air temperature. The chosen sensors also propose several other parameters, 
+		The primary mission commits the parameters of air pressure and
+		air temperature for telemetry. The chosen sensors also measure 
+		several other parameters, 
 		which have been added as an extension of the primary mission: relative
 		humidity, environmental gasses, acceleration, GPS position and cansat
 		orientation.
@@ -182,9 +175,9 @@
 		\subsubsection{Secondary Mission}
 
 		\begin{wrapfigure}{r}{0.28\textwidth}
-			\vspace{-35pt}
+			\vspace{-32.5pt}
 	 		\begin{center}
-			\includegraphics[width=0.3\textwidth]{placeholder}
+			\includegraphics[width=0.28\textwidth]{floatingMagnet}
 			\end{center}
 			\vspace{-15pt}
 			\caption{A neodymium magnet floating freely in diamagnetically
@@ -201,25 +194,28 @@
 		otherwise wasted energy from other modules to be added back into the
 		system. As a caveat, this method goes largely untested and therefore the
 		primary purpose of the team’s experimentation is to test if this is a viable
-		alternative to traditional power sources.\\
-		
-		
-
-		
-
-		{\color{blue} \textbf{Changes Made}
-		\begin{itemize}
-			\item More emphasis has been put on the secondary mission and its 
-			ability to be switched out with an alternate experimental module.
-			\item Other experiments are now being researched, such as detecting
-			cosmic reactions happening in the atmsophere due to solar winds, etc.\\
-		\end{itemize}
+		alternative to traditional power sources.\\\\
+\noindent
+		{\color{blue}
+		As a stretch goal, the team is now also looking to make several additional
+		experimental modules, so that the ability to switch experiments may be 
+		demonstrated, as well as possibly utilised for a physical launch. One of the 
+		experiments currently being researched are researching use of two 
+		Geiger--Muller tubes to measure changes in frequency of cosmic showers 
+		and collisions.
+		\\\\
+		Another experiment that the team is considering is the use of infrared,
+		visible light and other electromagnetic sensors to determine the health of
+		vegetation, which can be applied to forests, plantations and nature conservation
+		zones, in order to survey overall health of vegetation in these respective
+		areas.
+		\\
 		}
 
 		
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=0.5\textwidth]{placeholder}
+				\includegraphics[width=0.3\textwidth]{placeholder}
 			\end{center}
 			\vspace{-10pt}
 			\caption{Proposed wireframe design of base station live processing graphs
@@ -382,7 +378,7 @@
 		
 		\begin{figure}[H]
 			\begin{center}
-				\includegraphics[width=0.5\textwidth]{placeholder}
+				\includegraphics[width=0.7\textwidth]{electronics}
 			\end{center}
 			\vspace{-15pt}
 			\caption{Electronics sub-systems diagram}
@@ -391,10 +387,10 @@
 
 	\section{Software Design}
 
-		\begin{wrapfigure}{r}{0.33\textwidth}
+		\begin{wrapfigure}{r}{0.45\textwidth}
 			\vspace{-30pt}
 	 		\begin{center}
-			\includegraphics[width=0.30\textwidth]{placeholder}
+			\includegraphics[width=0.45\textwidth]{software}
 			\end{center}
 			\vspace{-15pt}
 			\caption[X]{Software system architecture diagram}
@@ -428,10 +424,10 @@
 
 	\section{Landing and Recovery System}
 
-		\begin{wrapfigure}{r}{0.33\textwidth}
+		\begin{wrapfigure}{r}{0.45\textwidth}
 			\vspace{-30pt}
 	 		\begin{center}
-			\includegraphics[width=0.30\textwidth]{placeholder}
+			\includegraphics[width=0.45\textwidth]{ground}
 			\end{center}
 			\vspace{-15pt}
 			\caption[X]{Landing and recovery system diagram}
@@ -441,12 +437,17 @@
 		descent speed. On landing, the fiberglass outer shell will flex, absorbing 
 		some of the landing shock. Our cansat will have both a dedicated
 		communications antenna and gps antenna. This means we will have 
-		better connection to the base station and a high chance of accurate GPS lock.
+		better connection to the base station and a high chance of accurate GPS lock,
+		further assisting the recovery team in locating the cansat.
 		\\\\
 		{\color{blue}As an additional measure, foam padding will be added 
 		directly underneath the batteries to protect them from extensive damage, which
 		could otherwise risk the battery life of the cansat during the recovery phase of
-		the launch.}
+		the launch.
+		\\\\
+		A buzzer will also be implemented to the design, which will sound
+		after the cansat enters post-landing mode, which will sound at approximately
+		90db, which is equatable to the amplitude of a jet from 300m distance.}
 
 	\section{Ground Support Equipment}
 		The team is developing a lightweight, robust base station program, which 
